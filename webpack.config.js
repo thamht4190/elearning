@@ -1,11 +1,12 @@
-module.exports = {
-  entry: [
-    './src/client/index.js'
-  ],
+var client = {
+  entry: { 
+    client: './src/client/index.js',
+    admin: './src/client/admin.js'
+  },
   output: {
     path: __dirname + '/src/public',
     publicPath: '/', 
-    filename: 'client.bundle.js'
+    filename: '[name].bundle.js'
   },
   module: {
     loaders: [{
@@ -24,3 +25,5 @@ module.exports = {
     contentBase: './'
   }
 };
+
+module.exports = client;

@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import CourseList from './reducer.course_list';
+import CourseList from './admin/reducer.course_list';
 
 const rootReducer = combineReducers({
-   courseList: CourseList
+   adminCourseList: CourseList
 });
 
 export default rootReducer;

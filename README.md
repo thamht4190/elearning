@@ -4,7 +4,7 @@ Wants to build your own elearning website with courses?
 
 ### Getting Started
 
-####Checkout this repo, install dependencies, then start the gulp process with the following:
+#### Checkout this repo, install dependencies, then start the gulp process with the following:
 
 ```
 > git clone https://github.com/thamht4190/elearning.git

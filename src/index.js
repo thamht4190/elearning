@@ -5,14 +5,12 @@ const path = require('path');
 var logger = require('./server/log');
 
 var common = require('./server/common');
+var admin = require('./server/admin');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-    // console.log(path.resolve(__dirname, '../public', 'index.html'));
-    //res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
-    res.send('hello world');
-});
+app.use('/admin', admin);
+app.use('/', common);
 
 app.listen(8080, function () {
     logger.info('Example app listening on port 8080!')
