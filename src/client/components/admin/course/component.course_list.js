@@ -8,7 +8,7 @@ class CourseList extends Component {
             return <div>Loading course list...</div>
         }
         return (
-            <table>
+            <table className="table table-bordered">
                 <thead>
                     <tr>
                         <th>#</th>
