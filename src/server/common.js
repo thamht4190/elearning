@@ -9,7 +9,7 @@ router.get('/about', function (req, res) {
 
 // define the home page route
 router.get('/', function (req, res) {
-  console.log(path.resolve(__dirname, '../public', 'index.html'));
+  // console.log(path.resolve(__dirname, '../public', 'index.html'));
   res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
 })
 
