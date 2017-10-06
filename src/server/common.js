@@ -4,13 +4,18 @@ const path = require('path');
 
 // define the about route
 router.get('/about', function (req, res) {
-  res.send('About birds')
+    res.send('About birds')
+})
+
+// define the about route
+router.get('/wiki', function (req, res) {
+    res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
 })
 
 // define the home page route
 router.get('/', function (req, res) {
-  // console.log(path.resolve(__dirname, '../public', 'index.html'));
-  res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
+    // console.log(path.resolve(__dirname, '../public', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
 })
 
 module.exports = router

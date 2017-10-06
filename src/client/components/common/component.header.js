@@ -7,11 +7,11 @@ import MultilangStrings from '../../languages';
 class Header extends Component {
     render() {
         return (
-            <div className="el-header">
-                <div className="logo el-header-item">
+            <div className="page-header">
+                <div className="logo page-header-item">
                     <a href="/"><img src="/img/logo.png" /></a>
                 </div>
-                <div className="el-menu">
+                <div className="page-menu">
                     <ul>
                         <li><Link to="/courses">{MultilangStrings.menu.courses}</Link></li>
                         <li><Link to="/blog">{MultilangStrings.menu.blog}</Link></li>
