@@ -26,6 +26,8 @@ body {
 }
 ul li { list-style-type: none }
 
+.e-nav { background: #920092; }
+
 .page-header { 
     width: 100%;
     height: 60px;

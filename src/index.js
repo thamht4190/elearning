@@ -2,12 +2,14 @@ var express = require('express');
 const app = express();
 const path = require('path');
 var session = require('express-session');
+const log4js = require('log4js');
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 
 var logger = require('./server/log');
+app.use(log4js.connectLogger(logger, { level: 'auto', format: ':method :url', nolog: '\\.gif|\\.jpg|\\.css|\\.png|\\min.js|\\.bundle.js$' }));
 
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/elearning', { useMongoClient: true, promiseLibrary: global.Promise });

@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 
 import Header from './common/component.header';
+import ComponentGradeList from './common/component.grade-list'
 
-export default class App extends Component {
+class App extends Component {
   render() { console.log('rendering App');
     return (
       <div>
         <Header />
-        React simple starter
+        <ComponentGradeList />
       </div>
-    );
+    ); 
   }
-}
+}  
+
+export default App

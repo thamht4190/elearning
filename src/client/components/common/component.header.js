@@ -13,8 +13,8 @@ class Header extends Component {
                 </div>
                 <div className="page-menu">
                     <ul>
-                        <li><Link to="/courses">{MultilangStrings.menu.courses}</Link></li>
-                        <li><Link to="/blog">{MultilangStrings.menu.blog}</Link></li>
+                        <li><Link to="/under-frade-2">Under grade 2</Link></li>
+                        <li><Link to="/grage-2-5">Grade 2 - 5</Link></li>
                     </ul>
                 </div>
             </div>

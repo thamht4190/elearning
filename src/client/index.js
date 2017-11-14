@@ -7,6 +7,7 @@ import thunk from 'redux-thunk';
 
 import App from './components/app';
 import Wiki from './components/wiki';
+import Admin from './components/admin';
 
 import reducers from './reducers';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/wiki" component={Wiki} />
+        <Route path="/admin" component={Admin} />
         <Route path="/" component={App} />
       </Switch>
     </BrowserRouter>
