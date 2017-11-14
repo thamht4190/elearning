@@ -13,18 +13,18 @@ const GRADES = [
 class ComponentGradeList extends Component {
     render() {
         return (
-            <ul>
+            <ul className="grade-list-wrapper">
                 {GRADES.map(grade => {
                     return (
-                        <li>
+                        <li key={grade.index}>
                             <span className="index">{grade.index}</span>
                             <h4>{grade.name}</h4>
                             <p>{grade.description}</p>
                             <hr />
 
-                            {grade.subjects.map(subj => {
+                            {grade.subjects.map((subj, index) => {
                                 return (
-                                    <div>
+                                    <div key={index}>
                                         <span>{subj.name}</span>
                                         <span>{subj.skills}</span>
                                     </div>

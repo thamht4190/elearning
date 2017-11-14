@@ -35,7 +35,7 @@ ul li { list-style-type: none }
     position: relative; 
     color: #fff;
 }
-.page-menu ul li { margin-left: 15px; }
+.page-menu ul li { margin-left: 15px; display: inline-block }
 .page-menu ul li a { color: #fff; font-size: 14px; }
 
 .page-secondary-menu { padding: 5px 0 }
@@ -46,3 +46,4 @@ ul li { list-style-type: none }
 .ebtn-success:hover { background: #207C06 }
 
 .padding0510 { padding: 5px 10px}
+.grade-list-wrapper { display: grid; grid-template-columns: repeat(3, 1fr) }

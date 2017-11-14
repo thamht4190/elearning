@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import Header from './common/component.header';
+import Header from './common/component.header'
 import ComponentGradeList from './common/component.grade-list'
 
 class App extends Component {
